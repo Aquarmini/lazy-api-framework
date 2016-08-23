@@ -90,5 +90,104 @@
             "orm",
             "thinkphp"
         ]
+    },
+    {
+        "name": "limingxinleo/limx-pdo",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/limingxinleo/limx-pdo.git",
+            "reference": "542fe1391e582b7c7fbf92906ec22a53455f0229"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/limingxinleo/limx-pdo/zipball/542fe1391e582b7c7fbf92906ec22a53455f0229",
+            "reference": "542fe1391e582b7c7fbf92906ec22a53455f0229",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-08-21 10:27:30",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "limx\\tools\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "This is a pdo demo"
+    },
+    {
+        "name": "limingxinleo/limx-func",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/limingxinleo/limx-func.git",
+            "reference": "4f558ae73e0ee97b5359d2d8037d4f35ee7f4085"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/4f558ae73e0ee97b5359d2d8037d4f35ee7f4085",
+            "reference": "4f558ae73e0ee97b5359d2d8037d4f35ee7f4085",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-08-23 15:35:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "limx\\func\\": "src"
+            },
+            "files": [
+                "src/functions/helper.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "there are some functions"
+    },
+    {
+        "name": "limingxinleo/limx-redis",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/limingxinleo/limx-redis.git",
+            "reference": "0108775eedf2158329dd72118761072b176cbbb5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/limingxinleo/limx-redis/zipball/0108775eedf2158329dd72118761072b176cbbb5",
+            "reference": "0108775eedf2158329dd72118761072b176cbbb5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-08-21 10:28:44",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "limx\\tools\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "This is a redis demo"
     }
 ]

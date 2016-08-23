@@ -1,0 +1,14 @@
+{
+    "name": "limingxinleo/limx-pdo",
+    "description": "This is a pdo demo",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "limx\\tools\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

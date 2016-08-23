@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'think\\composer\\' => array($vendorDir . '/topthink/think-installer/src'),
+    'limx\\tools\\' => array($vendorDir . '/limingxinleo/limx-pdo/src', $vendorDir . '/limingxinleo/limx-redis/src'),
+    'limx\\func\\' => array($vendorDir . '/limingxinleo/limx-func/src'),
 );
