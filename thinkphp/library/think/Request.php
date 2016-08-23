@@ -617,7 +617,7 @@ class Request
                     $vars = [];
             }
             // 当前请求参数和URL地址中的参数合并
-            $this->param = array_merge($this->route(false), $this->get(false), $vars);
+            $this->param = array_merge($this->get(false), $vars, $this->route(false));
         }
         if (true === $name) {
             // 获取包含文件上传信息的数组
@@ -753,7 +753,7 @@ class Request
             $this->param          = [];
             return $this->request = array_merge($this->request, $name);
         }
-        return $this->input($this->request ?: $_REQUEST, $name, $default, $filter);
+        return $this->input($this->request, $name, $default, $filter);
     }
 
     /**

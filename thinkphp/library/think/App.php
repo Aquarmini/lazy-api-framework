@@ -79,6 +79,17 @@ class App
         is_null($request) && $request = Request::instance();
 
         $config = self::initCommon();
+        if (defined('BIND_MODULE')) {
+            // 模块/控制器绑定
+            BIND_MODULE && Route::bind(BIND_MODULE);
+        } elseif ($config['auto_bind_module']) {
+            // 入口自动绑定
+            $name = pathinfo($request->baseFile(), PATHINFO_FILENAME);
+            if ($name && 'index' != $name && is_dir(APP_PATH . $name)) {
+                Route::bind($name);
+            }
+        }
+
         $request->filter($config['default_filter']);
         try {
 
@@ -160,11 +171,6 @@ class App
 
         // 监听app_end
         Hook::listen('app_end', $response);
-
-        // Trace调试注入
-        if (Config::get('app_trace')) {
-            Debug::inject($response);
-        }
 
         return $response;
     }
@@ -327,7 +333,7 @@ class App
         try {
             $instance = Loader::controller($controller, $config['url_controller_layer'], $config['controller_suffix'], $config['empty_controller']);
             if (is_null($instance)) {
-                throw new HttpException(404, 'controller not exists:' . $controller);
+                throw new HttpException(404, 'controller not exists:' . Loader::parseName($controller, 1));
             }
             // 获取当前操作名
             $action = $actionName . $config['action_suffix'];
@@ -379,7 +385,7 @@ class App
                 }
             }
 
-            // 应用命名空间
+            // 注册应用命名空间
             self::$namespace = $config['app_namespace'];
             Loader::addNamespace($config['app_namespace'], APP_PATH);
             if (!empty($config['root_namespace'])) {

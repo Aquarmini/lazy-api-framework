@@ -226,6 +226,8 @@
             width: 100%;
             margin: 12px 0;
             box-sizing: border-box;
+            table-layout:fixed;
+            word-wrap:break-word;            
         }
         .exception-var table caption{
             text-align: left;
@@ -249,7 +251,7 @@
             word-break: break-all;
         }
         .exception-var table td:first-child{
-            width: 12px;
+            width: 28%;
             font-weight: bold;
             white-space: nowrap;
         }
@@ -292,7 +294,7 @@
                 <div>
                     <h2>[<?php echo $code; ?>] <?php echo sprintf('%s in %s', parse_class($name), parse_file($file, $line)); ?></h2>
                 </div>
-                <div><h1><?php echo htmlentities($message); ?></h1></div>
+                <div><h1><?php echo nl2br(htmlentities($message)); ?></h1></div>
             </div>
         
     </div>

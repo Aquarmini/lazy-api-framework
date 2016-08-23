@@ -37,7 +37,7 @@ trait SoftDelete
     public static function onlyTrashed()
     {
         $model = new static();
-        return $model->db()->where(static::$deleteTime, '>', 0);
+        return $model->db()->where(static::$deleteTime, 'exp', 'is not null');
     }
 
     /**
@@ -106,7 +106,7 @@ trait SoftDelete
             // 恢复删除
             $name              = static::$deleteTime;
             $this->change[]    = $name;
-            $this->data[$name] = ['exp', 'null'];
+            $this->data[$name] = null;
             return $this->isUpdate()->save();
         }
         return false;
@@ -120,7 +120,7 @@ trait SoftDelete
     protected static function base($query)
     {
         if (static::$deleteTime) {
-            $query->where(static::$deleteTime, 'exp', 'null');
+            $query->where(static::$deleteTime, 'null');
         }
     }
 

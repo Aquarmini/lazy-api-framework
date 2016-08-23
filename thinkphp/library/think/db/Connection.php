@@ -351,7 +351,7 @@ abstract class Connection
             $result = $this->PDOStatement->execute();
             // 调试结束
             $this->debug(false);
-            $procedure = 0 === strpos(strtolower(substr(trim($sql), 0, 4)), 'call');
+            $procedure = in_array(strtolower(substr(trim($sql), 0, 4)), ['call', 'exec']);
             return $this->getResult($class, $procedure);
         } catch (\PDOException $e) {
             throw new PDOException($e, $this->config, $this->queryStr);
