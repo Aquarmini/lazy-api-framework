@@ -6,31 +6,28 @@
 // +----------------------------------------------------------------------
 // | Author: limx <715557344@qq.com> <http://www.lmx0536.cn>
 // +----------------------------------------------------------------------
-// | Msg: 无权限接口类
+// | Date: 2016/5/26 Time: 21:17
 // +----------------------------------------------------------------------
-// | Date: 2016/8/30 Time: 22:34
-// +----------------------------------------------------------------------
-namespace app\api\controller;
+require_once 'SimpleVerify.php';
 
-use app\common\controller\Api;
-
-class Index extends Api
+class AddVerify extends SimpleVerify
 {
-    public function index()
+    private $left_num = 0;
+    private $right_num = 0;
+
+    public function __construct()
     {
-        //获取操作码
-        return call_user_func_array([$this, self::$arrKeyCode[$this->strRequestKeyCode]], []);
+        parent::__construct();
+        $this->left_num = rand(0, 100);
+        $this->right_num = rand(0, 100);
+
+        $this->code = $this->left_num . "+" . $this->right_num . "=";
+        $this->res = $this->left_num + $this->right_num;
+
     }
 
-    public function get1()
-    {
-        return $this->succ(input(''));
+    public function verify(){
+        parent::verify();
+        unset($this->left_num,$this->right_num);
     }
-
-    public function get2()
-    {
-        return $this->fail(input(''),'错误');
-    }
-
 }
-

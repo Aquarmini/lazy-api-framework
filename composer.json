@@ -21,10 +21,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "topthink/framework": "dev-master",
-        "limingxinleo/limx-pdo": "dev-master",
-        "limingxinleo/limx-func": "dev-master",
-        "limingxinleo/limx-redis": "dev-master"
+        "topthink/framework": "*"
     },
     "extra": {
         "think-path": "thinkphp"

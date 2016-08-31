@@ -48,14 +48,15 @@ class BaseModel extends Model
 
         if (empty($data['id'])) {
             $status = $this->save($data);
-            if ($status === false) {
+            if (empty($status)) {
                 $this->error = '新增出错！';
                 return false;
             }
         } else {
+
             $condition['id'] = $data['id'];
             $status = $this->save($data, $condition);
-            if (false === $status) {
+            if (empty($status)) {
                 $this->error = '更新出错！';
                 return false;
             }

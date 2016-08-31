@@ -6,19 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit731e23dc26155fefefb4dbbb5335e712
 {
-    public static $files = array (
-        '6c3ab67e5363c35f800d54085379e080' => __DIR__ . '/..' . '/limingxinleo/limx-func/src/functions/helper.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         't' => 
         array (
             'think\\composer\\' => 15,
-        ),
-        'l' => 
-        array (
-            'limx\\tools\\' => 11,
-            'limx\\func\\' => 10,
         ),
     );
 
@@ -26,15 +17,6 @@ class ComposerStaticInit731e23dc26155fefefb4dbbb5335e712
         'think\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-installer/src',
-        ),
-        'limx\\tools\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/limingxinleo/limx-pdo/src',
-            1 => __DIR__ . '/..' . '/limingxinleo/limx-redis/src',
-        ),
-        'limx\\func\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/limingxinleo/limx-func/src',
         ),
     );
 

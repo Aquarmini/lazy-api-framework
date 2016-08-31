@@ -19,7 +19,7 @@ $self = [
     'log' => [
         'type' => 'File', // 支持 socket trace file
     ],
-    'app_trace' => true,
+    'app_trace' => false,
     'trace' => [
         'type' => 'Html',
     ],
@@ -37,6 +37,9 @@ $self = [
         'layout_on' => true,
         'layout_name' => 'layout/layout',
     ],
+
+
+    'api_version' => 'v1.0',
 ];
 
 return array_merge($self, $server);
