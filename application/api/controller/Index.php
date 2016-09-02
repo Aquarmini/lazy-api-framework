@@ -22,15 +22,9 @@ class Index extends Api
         return call_user_func_array([$this, self::$arrKeyCode[$this->strRequestKeyCode]], []);
     }
 
-    public function get1()
+    public function dumpGet()
     {
-        return $this->succ(input(''));
+        return $this->succ(input('get.'));
     }
-
-    public function get2()
-    {
-        return $this->fail(input(''),'错误');
-    }
-
 }
 

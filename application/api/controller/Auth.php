@@ -22,14 +22,11 @@ class Auth extends Api
         return call_user_func_array([$this, self::$arrKeyCode[$this->strRequestKeyCode]], []);
     }
 
-    public function get1()
+    public function dumpPost()
     {
-        return $this->succ(input(''));
-    }
-
-    public function get2()
-    {
-        return $this->fail(input(''),'错误');
+        $data[] = input('post.');
+        $data[] = request()->file();
+        return $this->succ($data);
     }
 
 }

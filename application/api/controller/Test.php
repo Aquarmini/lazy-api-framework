@@ -65,4 +65,11 @@ class Test extends Base
         }
 
     }
+
+    public function _empty()
+    {
+        $action = request()->action();
+
+        return $this->fetch('/test/view/' . $action);
+    }
 }
