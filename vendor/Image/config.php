@@ -1,5 +1,0 @@
-<?php 
-define('IMAGE', 'limingxinleo');
-
-
-?>
