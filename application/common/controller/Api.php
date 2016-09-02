@@ -14,7 +14,6 @@ use app\common\controller\Base;
 
 class Api extends Base
 {
-    //设置模块参数 全局变量 写在基类中
     protected static $arrKeyCode = [];
     protected $strRequestKeyCode = "";
 
@@ -55,6 +54,12 @@ class Api extends Base
         $this->strRequestKeyCode = $strKeyCode;
     }
 
+    /**
+     * [checkVersion 查看版本号是否 符合要求]
+     * @author limx
+     * @param $ver 版本号
+     * @return bool
+     */
     private function checkVersion($ver)
     {
         $bver = config('api_version');
