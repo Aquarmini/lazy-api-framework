@@ -16,6 +16,5 @@ class NoAuth extends Base
 {
     public function _initialize()
     {
-        echo 'noauth';
     }
 }

@@ -11,4 +11,5 @@
 return [
     'api_domain' => '',
     'is_test' => true,
+    'app_debug' => true,
 ];

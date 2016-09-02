@@ -16,6 +16,5 @@ class Auth extends Base
 {
     public function _initialize()
     {
-        echo 'auth';
     }
 }
