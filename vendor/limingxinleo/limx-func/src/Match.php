@@ -40,4 +40,19 @@ class Match
         }
         return false;
     }
+
+    /**
+     * [isImage 此扩展名是否是图片]
+     * @author limx
+     * @param $ext 扩展名
+     */
+    public static function isImage($name, $lib = [])
+    {
+        $auth = array_merge(['gif', 'jpg', 'jpeg', 'bmp', 'png', 'swf'], $lib);
+        $ext = strtolower(pathinfo($name, PATHINFO_EXTENSION));
+        if (in_array($ext, $auth)) {
+            return true;
+        }
+        return false;
+    }
 }

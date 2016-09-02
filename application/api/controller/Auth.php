@@ -25,7 +25,16 @@ class Auth extends Api
     public function dumpPost()
     {
         $data[] = input('post.');
-        $data[] = request()->file();
+        $file = request()->file('file');
+        if ($file) {
+            //验证图片格式
+            if (\limx\func\Match::isImage($file->getInfo('name')) === false) {
+                return $this->fail([], '图片格式不对！');
+            }
+            // 上传图片
+            $root = 'uploads' . DS . 'demo';
+            $file->move($root);
+        }
         return $this->succ($data);
     }
 

@@ -43,90 +43,6 @@
         ]
     },
     {
-        "name": "topthink/framework",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/top-think/framework.git",
-            "reference": "1430cd1da1f798113f23e0e9b8eb395377621b85"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/top-think/framework/zipball/1430cd1da1f798113f23e0e9b8eb395377621b85",
-            "reference": "1430cd1da1f798113f23e0e9b8eb395377621b85",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0",
-            "topthink/think-installer": "~1.0"
-        },
-        "require-dev": {
-            "johnkary/phpunit-speedtrap": "^1.0",
-            "mikey179/vfsstream": "~1.6",
-            "phpdocumentor/reflection-docblock": "^2.0",
-            "phploc/phploc": "2.*",
-            "phpunit/phpunit": "4.8.*",
-            "sebastian/phpcpd": "2.*",
-            "squizlabs/php_codesniffer": "2.*"
-        },
-        "time": "2016-09-01 07:06:29",
-        "type": "think-framework",
-        "installation-source": "source",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "Apache-2.0"
-        ],
-        "authors": [
-            {
-                "name": "liu21st",
-                "email": "liu21st@gmail.com"
-            }
-        ],
-        "description": "the new thinkphp framework",
-        "homepage": "http://thinkphp.cn/",
-        "keywords": [
-            "framework",
-            "orm",
-            "thinkphp"
-        ]
-    },
-    {
-        "name": "limingxinleo/limx-func",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/limingxinleo/limx-func.git",
-            "reference": "b0dda73bfdec2b2e1133d0fe8794541a7cdb51ef"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/b0dda73bfdec2b2e1133d0fe8794541a7cdb51ef",
-            "reference": "b0dda73bfdec2b2e1133d0fe8794541a7cdb51ef",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "time": "2016-09-01 14:41:25",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "limx\\func\\": "src"
-            },
-            "files": [
-                "src/functions/helper.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "description": "there are some functions"
-    },
-    {
         "name": "limingxinleo/wx-api",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -157,5 +73,89 @@
             "MIT"
         ],
         "description": "用于微信JSSDK、微信红包、微信支付等继承SDK"
+    },
+    {
+        "name": "topthink/framework",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/top-think/framework.git",
+            "reference": "7d9b65e63b1540695c00725a22ccb0da8ab59c5d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/top-think/framework/zipball/7d9b65e63b1540695c00725a22ccb0da8ab59c5d",
+            "reference": "7d9b65e63b1540695c00725a22ccb0da8ab59c5d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "topthink/think-installer": "~1.0"
+        },
+        "require-dev": {
+            "johnkary/phpunit-speedtrap": "^1.0",
+            "mikey179/vfsstream": "~1.6",
+            "phpdocumentor/reflection-docblock": "^2.0",
+            "phploc/phploc": "2.*",
+            "phpunit/phpunit": "4.8.*",
+            "sebastian/phpcpd": "2.*",
+            "squizlabs/php_codesniffer": "2.*"
+        },
+        "time": "2016-09-02 04:26:55",
+        "type": "think-framework",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "liu21st",
+                "email": "liu21st@gmail.com"
+            }
+        ],
+        "description": "the new thinkphp framework",
+        "homepage": "http://thinkphp.cn/",
+        "keywords": [
+            "framework",
+            "orm",
+            "thinkphp"
+        ]
+    },
+    {
+        "name": "limingxinleo/limx-func",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/limingxinleo/limx-func.git",
+            "reference": "22ae01fc735c54b1cad10daaa916bab39cc66f6a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/22ae01fc735c54b1cad10daaa916bab39cc66f6a",
+            "reference": "22ae01fc735c54b1cad10daaa916bab39cc66f6a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-09-02 05:51:55",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "limx\\func\\": "src"
+            },
+            "files": [
+                "src/functions/helper.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "there are some functions"
     }
 ]
