@@ -3,3 +3,8 @@
 # @author limx
 .idea
 composer.lock
+runtime
+public/cache
+public/ueditor
+public/uploads
+
