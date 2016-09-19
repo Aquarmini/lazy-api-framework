@@ -49,18 +49,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/limingxinleo/wx-api.git",
-            "reference": "395773137a94761db1ff0cdf556baf8256863392"
+            "reference": "745cbc394aec1ccf0e7e13a0c1982fc735aeb3b9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/limingxinleo/wx-api/zipball/395773137a94761db1ff0cdf556baf8256863392",
-            "reference": "395773137a94761db1ff0cdf556baf8256863392",
+            "url": "https://api.github.com/repos/limingxinleo/wx-api/zipball/745cbc394aec1ccf0e7e13a0c1982fc735aeb3b9",
+            "reference": "745cbc394aec1ccf0e7e13a0c1982fc735aeb3b9",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-08-30 03:38:22",
+        "time": "2016-09-05 08:42:34",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -81,12 +81,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/top-think/framework.git",
-            "reference": "7d9b65e63b1540695c00725a22ccb0da8ab59c5d"
+            "reference": "d2b75581fb3829bfbd6d7e91e3272fb0fbc8421c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/top-think/framework/zipball/7d9b65e63b1540695c00725a22ccb0da8ab59c5d",
-            "reference": "7d9b65e63b1540695c00725a22ccb0da8ab59c5d",
+            "url": "https://api.github.com/repos/top-think/framework/zipball/d2b75581fb3829bfbd6d7e91e3272fb0fbc8421c",
+            "reference": "d2b75581fb3829bfbd6d7e91e3272fb0fbc8421c",
             "shasum": ""
         },
         "require": {
@@ -102,7 +102,7 @@
             "sebastian/phpcpd": "2.*",
             "squizlabs/php_codesniffer": "2.*"
         },
-        "time": "2016-09-02 04:26:55",
+        "time": "2016-09-18 12:12:32",
         "type": "think-framework",
         "installation-source": "source",
         "notification-url": "https://packagist.org/downloads/",
@@ -130,18 +130,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/limingxinleo/limx-func.git",
-            "reference": "22ae01fc735c54b1cad10daaa916bab39cc66f6a"
+            "reference": "fbb1a0fb5d52218ecc0da7997a910937cf9bc05d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/22ae01fc735c54b1cad10daaa916bab39cc66f6a",
-            "reference": "22ae01fc735c54b1cad10daaa916bab39cc66f6a",
+            "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/fbb1a0fb5d52218ecc0da7997a910937cf9bc05d",
+            "reference": "fbb1a0fb5d52218ecc0da7997a910937cf9bc05d",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4.0"
         },
-        "time": "2016-09-02 05:51:55",
+        "time": "2016-09-18 08:40:40",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
